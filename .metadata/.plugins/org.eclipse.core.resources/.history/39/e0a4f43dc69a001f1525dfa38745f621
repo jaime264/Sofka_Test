@@ -1,0 +1,5 @@
+package com.bank.cuenta.repository;
+
+public interface CuentaRepository {
+
+}

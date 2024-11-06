@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.bank.cliente.service.ClienteService"/>
+    <fullyQualifiedTypeName name="com.bank.cliente.repository.ClienteRepository"/>
+    <fullyQualifiedTypeName name="com.bank.cuenta.service.MovimientoService"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="io.swagger.v3.oas.annotations.parameters.RequestBody"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.JsonSerializer"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ser.std.StringSerializer"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.deser.std.StringDeserializer"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.JsonDeserializer"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.security.Timestamp"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+    <fullyQualifiedTypeName name="com.bank.cuenta.repository.MovimientoRepository"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="com.bank.cliente.model.Cliente"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,44 @@
+package com.bank.cuenta.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bank.cuenta.model.Movimiento;
+import com.bank.cuenta.repository.MovimientoRepository;
+import com.bank.cuenta.service.MovimientoService;
+
+@Service
+public class MovimientoServiceImpl implements MovimientoService {
+
+	@Autowired
+    private MovimientoRepository movimientoRepository;
+
+	@Override
+	public List<Movimiento> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Movimiento getById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Movimiento save(Movimiento movimiento) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+    
+    
+}

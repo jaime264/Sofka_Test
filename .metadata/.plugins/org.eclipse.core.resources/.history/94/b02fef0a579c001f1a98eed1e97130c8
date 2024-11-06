@@ -1,0 +1,32 @@
+package com.bank.cuenta.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bank.cuenta.model.Movimiento;
+import com.bank.cuenta.service.MovimientoService;
+
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+
+@RestController
+@RequestMapping("/movimientos")
+public class MovimientoController {
+	
+	@Autowired
+	private MovimientoService movimientoService;
+
+	@GetMapping
+	public List<Movimiento> getAllMovimientos() {
+		return movimientoService.getAllMovimientos();
+	}
+
+	@PostMapping
+	public Movimiento createMovimiento(@RequestBody Movimiento movimiento) {
+		return movimientoService.saveMovimiento(movimiento);
+	}
+}

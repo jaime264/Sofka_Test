@@ -1,0 +1,5 @@
+package com.bank.cliente.producer;
+
+public class ClienteEventProducer {
+
+}

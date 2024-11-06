@@ -1,0 +1,26 @@
+package com.bank.cuenta.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bank.cuenta.model.Movimiento;
+import com.bank.cuenta.repository.MovimientoRepository;
+import com.bank.cuenta.service.MovimientoService;
+
+@Service
+public class MovimientoServiceImpl implements MovimientoService {
+
+	@Autowired
+    private MovimientoRepository movimientoRepository;
+
+    public List<Movimiento> getAllMovimientos() {
+        return movimientoRepository.findAll();
+    }
+
+    public Movimiento saveMovimiento(Movimiento movimiento) {
+        return movimientoRepository.save(movimiento);
+    }
+    
+}

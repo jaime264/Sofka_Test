@@ -1,0 +1,18 @@
+package com.bank.cliente.service;
+
+import java.util.List;
+
+import com.bank.cliente.model.Cliente;
+
+public interface ClienteService {
+
+	List<Cliente> getAll();
+
+	Cliente getById(Integer id);
+
+	Cliente save(Cliente cliente);
+
+	void delete(Integer id);
+
+	
+}

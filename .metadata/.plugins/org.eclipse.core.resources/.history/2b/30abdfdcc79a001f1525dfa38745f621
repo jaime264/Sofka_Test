@@ -1,0 +1,5 @@
+package com.bank.cliente.config;
+
+public class KafkaProducerConfig {
+
+}

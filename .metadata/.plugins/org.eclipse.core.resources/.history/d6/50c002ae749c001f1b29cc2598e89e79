@@ -1,0 +1,9 @@
+package com.bank.cuenta.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.bank.cuenta.model.Cuenta;
+
+public interface CuentaRepository extends JpaRepository<Cuenta, Integer> {
+
+}

@@ -1,0 +1,14 @@
+package com.bank.cuenta.listener;
+
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ClienteEventListener {
+	@KafkaListener(topics = "cliente-events", groupId = "cuenta-movimientos-group")
+    public void handleClienteEvent(Object clienteEvent) {
+        // Lógica para procesar el evento de cliente
+        System.out.println("Evento de cliente recibido: " + clienteEvent);
+        // Aquí puedes actualizar las cuentas o movimientos relacionados
+    }
+}

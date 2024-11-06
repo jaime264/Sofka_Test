@@ -1,0 +1,42 @@
+package com.bank.cuenta.service.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.bank.cuenta.model.Cuenta;
+import com.bank.cuenta.repository.CuentaRepository;
+import com.bank.cuenta.service.CuentaService;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class CuentaServiceImpl implements CuentaService{
+	
+	private final CuentaRepository cuentaRepository;
+
+	@Override
+	public List<Cuenta> getAll() {
+		// TODO Auto-generated method stub
+		return cuentaRepository.findAll();
+	}
+
+	@Override
+	public Cuenta getById(Integer id) {
+		// TODO Auto-generated method stub
+		return cuentaRepository.findById(id).orElse(null);
+	}
+
+	@Override
+	public Cuenta save(Cuenta cuenta) {
+		// TODO Auto-generated method stub
+		return cuentaRepository.save(cuenta);
+	}
+
+	@Override
+	public void delete(Integer id) {
+		cuentaRepository.deleteById(id);
+	}
+
+}

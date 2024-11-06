@@ -1,0 +1,5 @@
+package com.bank.cuenta.service.impl;
+
+public class CuentaServiceImpl {
+
+}

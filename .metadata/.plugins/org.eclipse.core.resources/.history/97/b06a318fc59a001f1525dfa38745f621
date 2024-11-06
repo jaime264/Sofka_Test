@@ -1,0 +1,5 @@
+package com.bank.cliente.service.impl;
+
+public class ClienteServiceImpl {
+
+}

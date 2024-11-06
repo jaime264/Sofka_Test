@@ -1,0 +1,17 @@
+package com.bank.cuenta.service;
+
+import java.util.List;
+
+import com.bank.cuenta.model.Cuenta;
+
+public interface CuentaService {
+
+	public List<Cuenta> getAll();
+
+	public Cuenta getById(Integer id);
+
+	public Cuenta save(Cuenta cuenta);
+
+	public void delete(Integer id);
+
+}
